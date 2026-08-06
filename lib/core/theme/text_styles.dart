@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'colors.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 //Classe Estática para armazenar os estilos de texto do aplicativo
 class TextStyles {
@@ -41,5 +42,19 @@ class TextStyles {
   static const TextStyle error = TextStyle(
     fontSize: 14,
     color: AppColors.error,
+  );
+
+  static const TextStyle fontManual = TextStyle(
+    fontFamily:
+        'RubikBubbles', 
+    fontSize: 40,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
+  );
+
+  static TextStyle get googleFonts => GoogleFonts.pressStart2p(
+    fontSize: 40,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textPrimary,
   );
 }
