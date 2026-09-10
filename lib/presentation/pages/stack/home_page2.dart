@@ -33,24 +33,27 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Stack(
+        alignment: AlignmentDirectional.center,
         children: [
-          Container(color: Colors.red, width: 300, height: 300),
-          Container(color: Colors.green, width: 290, height: 290),
-          Container(color: Colors.yellow, width: 280, height: 280),
           Container(
-            width: 310,
-            height: 310,
-            decoration: BoxDecoration(
-              color: Colors.yellow,
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: Colors.red,
-                width: 2,
-              ),
-            ),
-            child: const Center(
-              child: Text('Olá Mundo!', style: TextStyle(color: Colors.black)),
-            ),
+            width: 300,
+            height: 300,
+            color: Colors.black,
+          ),
+          Container(
+            width: 150,
+            height: 150,
+            color: Colors.red,
+          ),
+          Container(
+            width: 75,
+            height: 75,
+            color: Colors.blue,
+          ),
+          Container(
+            width: 37,
+            height: 37,
+            color: Colors.yellow,
           ),
         ],
       ),
