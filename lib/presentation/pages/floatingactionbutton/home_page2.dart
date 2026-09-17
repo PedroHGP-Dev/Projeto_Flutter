@@ -50,11 +50,17 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(
-        child: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.add, color: Colors.white, size: 50),
+      body: const Center(
+        child: Text(
+          'Bem-vindo ao meu app!',
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {},
+        backgroundColor: Colors.blue,
+        icon: const Icon(Icons.add, color: Colors.white),
+        label: const Text('Adicionar', style: TextStyle(color: Colors.white)),
       ),
     );
   }

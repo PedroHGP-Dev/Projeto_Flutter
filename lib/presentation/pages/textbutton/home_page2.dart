@@ -51,9 +51,21 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: IconButton(
+        child: TextButton.icon(
           onPressed: () {},
-          icon: Icon(Icons.add, color: Colors.white, size: 50),
+          style: TextButton.styleFrom(
+            backgroundColor: Colors.blue,
+            elevation: 5,
+          ),
+          icon: const Icon(Icons.add, color: Colors.white),
+          label: const Text(
+            'Adicionar',
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
     );

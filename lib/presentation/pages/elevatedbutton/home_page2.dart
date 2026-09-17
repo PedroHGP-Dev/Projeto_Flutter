@@ -51,9 +51,14 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: IconButton(
+        child: ElevatedButton.icon(
           onPressed: () {},
-          icon: Icon(Icons.add, color: Colors.white, size: 50),
+          style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
+          icon: const Icon(Icons.add, color: Colors.white),
+          label: const Text(
+            'Clique aqui',
+            style: TextStyle(fontSize: 20, color: Colors.white),
+          ),
         ),
       ),
     );

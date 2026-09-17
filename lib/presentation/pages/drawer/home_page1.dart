@@ -23,12 +23,30 @@ class HomePage extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            const DrawerHeader(
+            const UserAccountsDrawerHeader(
               decoration: BoxDecoration(color: Colors.blue),
-              child: Text('Home'),
+              accountName: Text('Fábio Jr. Alves'),
+              accountEmail: Text('fabio@gmail.com'),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Color(0xFF1E3A5F),
+                child: Text('F.A.', style: TextStyle(color: Colors.white)),
+              ),
             ),
-            ListTile(title: const Text('Minha Conta'), onTap: () => {}),
-            ListTile(title: const Text('Meus Pedidos'), onTap: () => {}),
+            ListTile(
+              leading: const Icon(Icons.person),
+              title: const Text('Minha conta'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: const Icon(Icons.shopping_cart),
+              title: const Text('Meus pedidos'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: const Icon(Icons.favorite),
+              title: const Text('Favoritos'),
+              onTap: () {},
+            ),
           ],
         ),
       ),
